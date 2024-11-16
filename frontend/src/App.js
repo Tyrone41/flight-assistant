@@ -47,12 +47,6 @@ function App() {
             <Route path="/ai-travel-assistance" element={<AITravelAssistance />} />
         </Routes>
     </Router>
-//         <div className="App" style={backgroundHomeStyle}>
-//             <div id="mySidenav" class="sidenav">
-//   <a href="#">AI Wellness</a>
-//   <a href="#">AI Travel assistance</a>
-// </div>
-//         </div>
     );
 }
 

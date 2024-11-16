@@ -1,0 +1,74 @@
+{
+    "budget_plan": {
+      "budget_plan": {
+        "income": 3000,
+        "fixed_expenses": 2300,
+        "savings_allocation": 120,
+        "disposable_income": 580
+      },
+      "travel_plan": {
+        "destination": "Paris",
+        "logic": "Out of budget",
+        "reason": "Preferred destination is out of budget",
+        "details": {
+          "flight": {
+            "airline": "Air France",
+            "price": 450
+          },
+          "hotel": {
+            "name": "Eiffel Tower Hotel",
+            "location": "City Center",
+            "nightly_rate": 150,
+            "total_cost": 600
+          },
+          "total_trip_cost": 1050
+        }
+      },
+      "recommendations": {
+        "details": [
+          {
+            "destination": "Miami Beach",
+            "flight": {
+              "airline": "Delta Airlines",
+              "price": 200
+            },
+            "hotel": {
+              "name": "Oceanfront Resort",
+              "location": "Beachfront",
+              "nightly_rate": 100,
+              "total_cost": 400
+            },
+            "total_trip_cost": 600
+          },
+          {
+            "destination": "Orlando",
+            "flight": {
+              "airline": "JetBlue",
+              "price": 150
+            },
+            "hotel": {
+              "name": "Theme Park Hotel",
+              "location": "Near Attractions",
+              "nightly_rate": 80,
+              "total_cost": 320
+            },
+            "total_trip_cost": 470
+          },
+          {
+            "destination": "Key West",
+            "flight": {
+              "airline": "Southwest Airlines",
+              "price": 180
+            },
+            "hotel": {
+              "name": "Tropical Paradise Resort",
+              "location": "Island Escape",
+              "nightly_rate": 120,
+              "total_cost": 480
+            },
+            "total_trip_cost": 660
+          }
+        ]
+      }
+    }
+  }
