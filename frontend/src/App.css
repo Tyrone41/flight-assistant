@@ -180,7 +180,7 @@ main {
   border-radius: 5px;
   cursor: pointer;
   border: 1px solid #ccc; Add outline */
-  margin: 40px 40px 90px 90px;
+  margin: 10px 10px 10px 10px;
   background-color: #1a73e8;
   color: white;
    border: none;
@@ -195,6 +195,72 @@ main {
 text-align: center;
 margin-left: 20%;
 font-family: Arial,sans-serif;
+font-size: 20px;
+}
+
+.border {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.btn2{
+  background-color: #ffffff;
+  color: rgb(191, 103, 103);
+   border: none;
+    border-radius: 5px ;
+     /* background: linear-gradient(#0078d2,#0061ab); */
+ border : 1px solid #ffffff;
+ border-radius : 2px;
+ color:  #000000 !important;
+ height: 35px;
+ width: 60%;
+ font-weight: bold !important;
+text-align: center;
+margin-left: 20%;
+font-family: Arial,sans-serif !important;
+font-weight: 400;
+}
+
+/* Container to center the button */
+.change-seats-container {
+  text-align: left; /* Aligns button to the left */
+  /* margin-top: 10px; Adds spacing from the top */
+  border-top: 1px solid #ccc;
+}
+
+/* Button styling */
+.change-seats-button {
+  background-color: #0078d7; /* Bright blue background */
+  color: #ffffff; /* White text */
+  border: none; /* No border */
+  padding: 10px 16px; /* Adjusts inner padding */
+  font-size: 14px; /* Slightly smaller text size */
+  font-weight: 600; /* Makes the text semi-bold */
+  border-radius: 3px; /* Slightly rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+  text-transform: capitalize; /* Ensures button text looks clean */
+  position: relative;
+  top:40px;
+  left: 55px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#ChangeTrip {
+  background-color: #359ba6;
+}
+
+/* Hover effect */
+.change-seats-button:hover {
+  background-color: #005bb5; /* Slightly darker blue on hover */
+}
+
+/* Active state */
+.change-seats-button:active {
+  background-color: #004a99; /* Even darker blue */
+  transform: scale(0.98); /* Shrinks the button slightly when clicked */
 }
 
 .btn:hover {
