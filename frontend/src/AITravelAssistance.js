@@ -159,18 +159,20 @@ monthly_income: "",
                 ) : (
                     <div className="main container">
                         <aside className="sidebar">
-                            <div className="sidebarHeading">
-                                <h2>Welcome!</h2>
-                                <p>Thank you for being a loyal FlyFit member.</p>
+                        <div className="sidebarHeading">
+                            <div className='relative'>
+                            <h2>Welcome!</h2>
+                            <p>Thank you for being a loyal FlyFit<br/> member</p>
                             </div>
+                        </div>
                             <div style={{ backgroundColor: 'white' }}>
                                 <div className="trip-info">
-                                    <p><strong>Monthly Income:</strong> ${formData.monthly_income || 'N/A'}</p>
-                                    <p><strong>Expenses:</strong> ${formData.fixed_expenses || 'N/A'}</p>
-                                    <p><strong>Savings :</strong> {formData.savings_allocation || 'N/A'}</p>
-                                    <p><strong>Preferred Destination:</strong> {formData.preferred_destination}</p>
-                                    <p><strong>No. of Days:</strong> {formData.duration_of_stay}</p>
-                                    <p><strong>Current Location</strong> {formData.current_location}</p>
+                                    <p style={{marginLeft:'25px'}}><strong>Monthly Income:</strong> ${formData.monthly_income || 'N/A'}</p>
+                                    <p style={{marginLeft:'25px'}}><strong>Expenses:</strong> ${formData.fixed_expenses || 'N/A'}</p>
+                                    <p style={{marginLeft:'25px'}}><strong>Savings :</strong> {formData.savings_allocation || 'N/A'}</p>
+                                    <p style={{marginLeft:'25px'}}><strong>Preferred Destination:</strong> {formData.preferred_destination}</p>
+                                    <p style={{marginLeft:'25px'}}><strong>No. of Days:</strong> {formData.duration_of_stay}</p>
+                                    <p style={{marginLeft:'25px'}}><strong>Current Location</strong> {formData.current_location}</p>
                                 </div>
                                 <button className="change-seats-button" onClick={handleReset}>
                                     Change Trip
