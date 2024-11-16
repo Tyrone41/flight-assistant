@@ -106,7 +106,8 @@ const AIWellness = () => {
         <div style={backgroundStyle}>
             {!isFormSubmitted ? (
                 <div className="row-form">
-                    <label className="zeta">
+                                <h style={{fontSize : '20px',marginLeft : '300px',marginBottom :  '20px', color: '#0078d2'}}>AI Mental and Physical Wellness Assistance</h><br/>
+                    <label className="zeta" style={{marginLeft: '50px'}}>
                         Passenger last name
                         <span> : </span>
                         <input
@@ -133,18 +134,20 @@ const AIWellness = () => {
                     </button>
                 </div>
             ) : (
-                <div className="row-form main container">
-                    <aside className="sidebar">
+                <div className="row-form main container" style={{paddingLeft: '5%'}}>
+                    <aside className="sidebar" style={{width: '20% !important'}}>
                         <div className="sidebarHeading">
                             <div className='relative'>
                             <h2>Welcome!</h2>
-                            <p>Thank you for being a loyal FlyFit member</p>
+                            <p>Thank you for being a loyal FlyFit<br/> member</p>
                             </div>
                         </div>
                         <div style={{ backgroundColor: 'white' }}>
                             <div className="trip-info">
-                                <p><strong>Confirmation code:</strong> {submittedData?.confirmationNum}</p>
-                                <p><strong>Trip name:</strong> BTR/CLT</p>
+                                <p style={{marginLeft:'10px'}}><strong>Confirmation code:</strong> {submittedData?.confirmationNum}</p>
+                                <p style={{marginLeft:'10px'}}><strong>Trip:</strong> BTR/CLT</p>
+                                <p style={{marginLeft:'10px'}}><strong>Date of Departure:</strong> 2024-16-11</p>
+                                <p style={{marginLeft:'10px'}}><strong>Date of Arrival:</strong> 2024-17-11</p>
                             </div>
                             <div className="change-seats-container">
                                 <button className="change-seats-button" onClick={() => handleSectionChange('PreFlight')}>
@@ -162,7 +165,7 @@ const AIWellness = () => {
                             </div>
                         </div>
                     </aside>
-                    <main className="main-content">
+                    <main className="main-content" style={{width: '50%'}}>
                         {activeSection === 'PreFlight' && preFlightData.length > 0 && (
                             <section className="PreFlight">
                                 <h2>Pre-Flight Wellness Plan</h2>
