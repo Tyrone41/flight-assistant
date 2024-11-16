@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import backgroundHome from './backgroundHome.png';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import Home from './Home';
+import AIWellness from './AIWellness';
+import AITravelAssistance from './AITravelAssistance';
 
 function App() {
     const [flightData, setFlightData] = useState({
@@ -14,6 +20,14 @@ function App() {
         setFlightData({ ...flightData, [e.target.name]: e.target.value });
     };
 
+    const backgroundHomeStyle = {
+        backgroundImage: `url(${backgroundHome})`,
+        backgroundSize: 'cover', // Adjust to fit the container
+        backgroundRepeat: 'no-repeat', // Prevent tiling
+        height: '100vh', // Full viewport height
+      };
+      
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -25,33 +39,20 @@ function App() {
     };
 
     return (
-        <div className="App">
-            <h1>AI-Powered Flight Delay Predictor</h1>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Departure Time:
-                    <input type="text" name="departure_time" value={flightData.departure_time} onChange={handleChange} />
-                </label>
-                <br />
-                <label>
-                    Flight Number:
-                    <input type="text" name="flight_number" value={flightData.flight_number} onChange={handleChange} />
-                </label>
-                <br />
-                <label>
-                    Airline:
-                    <input type="text" name="airline" value={flightData.airline} onChange={handleChange} />
-                </label>
-                <br />
-                <label>
-                    Weather Condition:
-                    <input type="text" name="weather_condition" value={flightData.weather_condition} onChange={handleChange} />
-                </label>
-                <br />
-                <button type="submit">Predict Delay</button>
-            </form>
-            {prediction !== null && <h2>Prediction: {prediction}</h2>}
-        </div>
+        <Router>
+        <Routes>
+            {/* Define routes for each page */}
+            <Route path="/" element={<Home />} />
+            <Route path="/ai-wellness" element={<AIWellness />} />
+            <Route path="/ai-travel-assistance" element={<AITravelAssistance />} />
+        </Routes>
+    </Router>
+//         <div className="App" style={backgroundHomeStyle}>
+//             <div id="mySidenav" class="sidenav">
+//   <a href="#">AI Wellness</a>
+//   <a href="#">AI Travel assistance</a>
+// </div>
+//         </div>
     );
 }
 

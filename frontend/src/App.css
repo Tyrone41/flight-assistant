@@ -36,3 +36,235 @@
     transform: rotate(360deg);
   }
 }
+
+/* The side navigation menu */
+.sidenav {
+  margin-top: 8.2%;
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fffefe; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 15px 9px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  font-weight: 700;
+  text-align: left;
+}
+
+.row-form {
+  padding-top: 8%;
+  padding-left: 10%;
+}
+.row-form label {
+  margin: 0;
+}
+.zeta, h6 {
+  font-family: Arial,sans-serif;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  white-space: nowrap;
+  color: #0078d2;
+}
+.label, [class*="input-group"] .legend, label {
+  line-height: 20px;
+  margin: 5px 0;
+  position: relative;
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Change to your desired font */
+  font-size: 16px; /* Adjust size */
+ /* font-weight: bold;  Make it bold if needed */
+  color: #000000; /* Change text color */
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  font-family: 'Verdana', sans-serif; /* Font for input text */
+  font-size: 14px; /* Font size for input */
+  padding: 10px; /* Add padding inside the box */
+  border: 1px solid #9da6ab;; /* Border color */
+  background-color: #f9f9f9; /* Light background */
+  color: #555; /* Text color */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.submit-button {
+   padding: 10px 20px;
+    background-color: #007BFF;
+     color: white;
+      border: none;
+       border-radius: 5px ;
+        background: linear-gradient(#0078d2,#0061ab);
+    border : 1px solid #0078d2;
+    border-radius : 2px;
+    color:  #f9f9f9 !important;
+    height: 35px;
+    width: 10%;
+    font-weight: 400;
+  text-align: center;
+  margin-left: 2%;
+  font-family: Arial,sans-serif;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 10px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 22%;
+  /* background-color: #0056b3; */
+  color: white;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  border: 1px solid #ccc; /* Add outline to the sidebar */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.sidebarHeading {
+  background-color: #0056b3;
+  border-radius: 10px;
+  top:10px;
+  height: 150px;
+}
+
+.sidebar h2 {
+  margin: 0 0 10px;
+}
+
+.trip-info {
+  /* background-color: #0073e6;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc; Add outline */
+  color: #000000;
+}
+
+.btn {
+  /* display: block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc; Add outline */
+  margin: 40px 40px 90px 90px;
+  background-color: #1a73e8;
+  color: white;
+   border: none;
+    border-radius: 5px ;
+     /* background: linear-gradient(#0078d2,#0061ab); */
+ border : 1px solid #0078d2;
+ border-radius : 2px;
+ color:  #f9f9f9 !important;
+ height: 35px;
+ width: 60%;
+ font-weight: 400;
+text-align: center;
+margin-left: 20%;
+font-family: Arial,sans-serif;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.sidebar-options {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.sidebar-options li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-options li:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.check-in {
+  background-color: #e8f4fc;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add outline */
+}
+
+.flight-details h2 {
+  margin: 0 0 10px;
+}
+
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: #f1f3f5;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Add outline */
+}
+
+.flight-info .departure, .flight-info .arrival {
+  width: 45%;
+}
+
+.details {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc; /* Add outline */
+}
+
+/* Flight Details Outline */
+.flight-details {
+  border: 2px solid #ccc; /* Add outline around flight details */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
